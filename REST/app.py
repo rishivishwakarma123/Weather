@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-# الأفضل: use environment variable instead of hardcoding
+
 API_KEY = os.getenv("API_KEY", "e581e0045207efc3c5a4be1b42d7e562")
 
 @app.route("/", methods=["GET", "POST"])
